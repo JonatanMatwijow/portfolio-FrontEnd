@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(32, 55, 61);
+    font-family: monospace;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+main{
+    width: 100%;
+    height: 85%;
+}
+    
+#login {
+    margin: 35px auto;
+    padding: 0 135px;
+}
+
+form{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.3);
+   backdrop-filter: blur(1rem);
+   border-radius: 15px;
+   padding-bottom: 15px;
+}
+
+.img-perfil {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 25px;
+}
+
+.img-perfil .img-perfil-login {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+   
+}
+
+.border-login {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /*border: 1px solid white;*/
+}
+
+
+/* "Probando sin la necedidad de poner titulo, viendo como queda"
+
+.border-login h1 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}*/ 
+
+.border-login .input- {
+    border: 1px solid white 50%;
+    margin: 10px;
+    height: 25px;
+    text-align: center;
+    width: 250px;
+    height:30px;
+    color: blanchedalmond;
+    font-size: 15px;
+    font-family: 'monospace';
+}
+
+.border-login .bottom-login {
+    cursor: pointer;
+    width: 100px;
+    height:30px;
+    color: blanchedalmond;
+    font-size: 15px;
+    font-family: 'monospace';
+    margin-top: 15px;
+}
+
+.border-login a .bottom-back{
+    margin-top: 15px;
+    cursor: pointer;
+    width: 100px;
+    height:30px;
+    color: red;
+    font-size: 15px;
+    font-family: 'monospace';
+}
+
+.footer-info{
+    color: blanchedalmond;
+    font-size: 12px;
+}
+
+.footer-info hr{
+    margin-bottom: 15px;
+}
+
+
+.footer-info p{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+.footer-info .footer-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 100px;
+    margin-top: 20px;
+}
+
