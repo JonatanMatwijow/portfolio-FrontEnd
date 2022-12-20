@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #f3f2ef; */
+    font-family: monospace;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    /* padding: 15px; */
+}
+
+header {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid #000;
+    border-radius: 30px; */
+    /* margin: 10px;
+    padding: 15px; */
+}
+header a{
+    color: #ffe4c4;
+}
+header .navbar {
+    width: 100%;
+    height: 70px;
+    bbackground: rgb(50,50,50);
+    background: linear-gradient(0deg, rgba(50,50,50,1) 10%, rgba(0,0,0,1) 100%);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+header .navbar-links {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+
+header .navbar-links .container-logo-navbar {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    height: 50px;
+    align-items: center;
+    color: #ffe4c4;
+    padding-left: 10px;
+
+}
+header .navbar-links .container-logo-navbar .logo-navbar{
+    width: 170px;
+    height: 90px;
+} 
+header .navbar-links ul {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    padding-right: 30px;
+
+}
+
+header .navbar-links ul .nav-icons {
+    width: 33px;
+    height: 33px;
+    color: #ffe4c4;
+}
+
+header .navbar-links ul .nav-bottom-login {
+    border: 1px solid #ffe4c4;
+    color: #ffe4c4;
+    padding: 5px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 32px;   
+}
+header .navbar-links ul .nav-bottom-login a{
+    text-decoration: none;
+    color: #ffe4c4;
+    padding-left: 10px;
+}
+
+/* Estas lineas hacen que los iconos cambien de color al pasar el mouse */
+.fa-brands.fa-github.fa-2xl:hover{
+    color: #95f00c;
+}
+.fa-brands.fa-twitter.fa-2xl:hover{
+    color: #95f00c;
+}
+.fa-brands.fa-linkedin-in.fa-2xl:hover{
+    color: #95f00c;
+}
+.fa-solid.fa-envelope.fa-2xl:hover{
+    color: #95f00c;
+}
+.fa-solid.fa-right-to-bracket.fa-lg.nav-bottom-login:hover{
+    color: #95f00c;
+}
+
+
+main {
+    margin: 90px 15px 0 15px;
+}
+
+main section {
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main .the-banner {
+    width: 100%;
+    height: 400px;
+    border-radius: 15px 15px 0 0;
+}
+
+main .container-img-perfil {
+    position: absolute;
+    left: 70px;
+    transform: translate(-30%, -60%);
+}
+
+main .img-perfil {
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 150px;
+    height: 150px;
+}
+
+/* linea de boton editar banner */
+main .pencil-edit-banner {
+    position: absolute;
+    right: 25px;
+    top: 450px;
+}
+
+/* linea de boton editar imagen de perfil */
+main .pencil-edit-img {
+    position: absolute;
+    left: 174px;
+    top: 485px;
+}
+
+main .datos {
+    padding: 10px;
+    padding-top: 60px;
+}
+
+main .datos span {
+    padding-bottom: 50px;
+}
+
+main .logo-cap {
+    position: absolute;
+    right: 25px;
+    top: 500px;
+}
+
+main .logo-cap a img {
+    width: 130px;
+
+}
+
+/* Estilos de la seccion Educacion */
+
+main .dif-sections .cajita-edu{
+    border: 1px solid #202020;
+    border-radius: 0.75rem;
+}
+main .dif-sections .container-logo-Edu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .dif-sections .logo-Edu{
+    width: 70px;
+    height: 70px;
+} 
+
+main .dif-sections .descripcion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+main .dif-sections .descripcion p{
+    margin: 0;
+}
+/* ---------------------------------------------------
+estas lineas son de los estilos para el titulo e iconos 
+de las diferentes secciones, estan todos juntos.  */
+.dif-sections {
+    padding: 10px;
+}
+
+.container-titulo-iconos {
+    display: flex;
+    width: 100%;
+}
+
+.title-section {
+    width: 50%;
+    margin: 15px 15px 30px 15px;
+}
+
+.botons-edit-trash {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    height: 25px;
+    margin-right: 15px;
+    gap: 10px;
+}
+
+/* ----------------------------------------------*/
+
+/* ---------------------------------------------------
+estas lineas son los estilos de las barras de progreso.  */
+.progress{
+    display: flex;
+    height: 1.5rem;
+    overflow: hidden;
+    font-size: 1rem;
+    background-color: #e9ecef;
+    border-radius: 1.25rem;
+    box-shadow: 8px 4px 12px 0.03px;
+}
+.sub-title-and-icon-progres-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.sub-title-and-icon-progres-bar p {
+    padding-left: 15px;
+    display: flex;
+    align-items: flex-end;
+    height: 32px;
+    font-size: 1.25rem;
+}
+.col-gap{
+    gap: 50px;
+}
+.barras-progre-gap{
+    margin-bottom: 20px;
+}
+
+/* ---------------------------------------------------
+estas lineas son los estilos del footer.  */
+footer {
+    width: 100%;
+    height: 100px;
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(50,50,50,1) 90%);
+}
+
+footer hr {
+    border: 2px solid #95f408;
+}
+
+footer .box-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.textCenter {
+    color: antiquewhite;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+
+/* ----------------------------------------------*/
