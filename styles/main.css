@@ -6,19 +6,28 @@
     font-family: monospace;
 }
 
+/* cambios para que las imagenes de las cards se vean mas justos al texto */
+#img-card{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-top: 13px;
+    padding-right: 13px;
+}
+
+/* esta linea modifica las cards, se elimina el borderbox */
+#border-card{
+    border: none;
+}
+
 body {
     width: 100%;
     height: 100vh;
-    /* padding: 15px; */
 }
 
 header {
     width: 100%;
     height: auto;
-    /* border: 1px solid #000;
-    border-radius: 30px; */
-    /* margin: 10px;
-    padding: 15px; */
 }
 header a{
     color: #ffe4c4;
@@ -26,7 +35,7 @@ header a{
 header .navbar {
     width: 100%;
     height: 70px;
-    bbackground: rgb(50,50,50);
+    background: rgb(50,50,50);
     background: linear-gradient(0deg, rgba(50,50,50,1) 10%, rgba(0,0,0,1) 100%);
     position: fixed;
     top: 0;
@@ -61,7 +70,6 @@ header .navbar-links ul {
     gap: 50px;
     list-style: none;
     padding-right: 30px;
-
 }
 
 header .navbar-links ul .nav-icons {
@@ -102,11 +110,13 @@ header .navbar-links ul .nav-bottom-login a{
     color: #95f00c;
 }
 
-
 main {
-    margin: 90px 15px 0 15px;
+    margin: 90px 40px 0 40px;
 }
 
+main ul li {
+    list-style: none !important;
+}
 main section {
     border: 1px solid black;
     border-radius: 15px;
@@ -116,21 +126,21 @@ main section {
 
 main .the-banner {
     width: 100%;
-    height: 400px;
+    height: 480px;
     border-radius: 15px 15px 0 0;
 }
 
 main .container-img-perfil {
     position: absolute;
-    left: 70px;
+    left: 150px;
     transform: translate(-30%, -60%);
 }
 
 main .img-perfil {
     border-radius: 50%;
     border: 5px solid white;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    
 }
 
 /* linea de boton editar banner */
@@ -148,12 +158,20 @@ main .pencil-edit-img {
 }
 
 main .datos {
-    padding: 10px;
-    padding-top: 60px;
+    padding-top: 20px;
+    padding-left: 330px;
+    padding-bottom: 20px;
+    
 }
 
 main .datos span {
     padding-bottom: 50px;
+}
+
+main .txt_sobre_mi{
+    width: 70%;
+    margin: auto;
+    
 }
 
 main .logo-cap {
@@ -167,21 +185,13 @@ main .logo-cap a img {
 
 }
 
-/* Estilos de la seccion Educacion */
 
-main .dif-sections .cajita-edu{
-    border: 1px solid #202020;
-    border-radius: 0.75rem;
-}
-main .dif-sections .container-logo-Edu{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/* Estilos de los logos de las empresas, dentro de las cajitas */
 
-main .dif-sections .logo-Edu{
-    width: 70px;
-    height: 70px;
+main .dif-sections .logo-empresa{
+    width: 100px;
+    height: 100px;
+    
 } 
 
 main .dif-sections .descripcion{
@@ -189,10 +199,14 @@ main .dif-sections .descripcion{
     align-items: center;
     justify-content: center;
     gap: 50px;
+    padding-bottom: 10px; 
 }
 main .dif-sections .descripcion p{
     margin: 0;
 }
+
+
+
 /* ---------------------------------------------------
 estas lineas son de los estilos para el titulo e iconos 
 de las diferentes secciones, estan todos juntos.  */
