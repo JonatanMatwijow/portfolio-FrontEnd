@@ -2,124 +2,117 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(32, 55, 61);
+    text-decoration: none;
     font-family: monospace;
 }
 body{
-    width: 100%;
-    height: 100vh;
+    background-image: url(../Img/cool-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 main{
     width: 100%;
-    height: 85%;
+    height: 100vh;
+    padding: 20px;
+    margin: auto;
+    padding-top: 130px;
 }
     
-#login {
-    margin: 35px auto;
-    padding: 0 135px;
-}
-
-form{
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0.5rem 1rem 2rem rgba(255, 255, 255, 0.3);
-   backdrop-filter: blur(1rem);
-   border-radius: 15px;
-   padding-bottom: 15px;
-}
-
-.img-perfil {
-    display: flex;
-    justify-content: center;
+.contenedor_general{
     width: 100%;
-    height: 100%;
-    margin-bottom: 25px;
+    max-width: 900px;
+    margin: auto;
+    position: relative;
 }
 
-.img-perfil .img-perfil-login {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-   
+.back_form{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    backdrop-filter: blur(1rem);
+    background-color: rgba(0, 138, 255, 0.3);
 }
 
-.border-login {
+.back_form div{
+    margin: 100px 40px;
+    color: white;
     display: flex;
     flex-direction: column;
-   align-items: center;
-    margin: auto;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    /*border: 1px solid white;*/
+    align-items: flex-end;
 }
-
-
-/* "Probando sin la necedidad de poner titulo, viendo como queda"
-
-.border-login h1 {
-    color: white;
-    font-size: 20px;
-    margin-bottom: 20px;
-}*/ 
-
-.border-login .input- {
-    border: 1px solid white 50%;
-    margin: 10px;
-    height: 25px;
+.back_form div p, 
+.back_form div span{
+    margin-top: 70px;
+    width: 315px;
     text-align: center;
-    width: 250px;
-    height:30px;
-    color: blanchedalmond;
-    font-size: 15px;
-    font-family: 'monospace';
+    font-size: 16px;
+    font-weight: 300;
 }
 
-.border-login .bottom-login {
-    cursor: pointer;
-    width: 100px;
-    height:30px;
-    color: blanchedalmond;
-    font-size: 15px;
-    font-family: 'monospace';
-    margin-top: 15px;
+.back_form div h3{
+    font-size: 26px;
+    font-weight: 600;
 }
 
-.border-login a .bottom-back{
-    margin-top: 15px;
-    cursor: pointer;
-    width: 100px;
-    height:30px;
-    color: red;
-    font-size: 15px;
-    font-family: 'monospace';
-}
-
-.footer-info{
-    color: blanchedalmond;
-    font-size: 12px;
-}
-
-.footer-info hr{
-    margin-bottom: 15px;
-}
-
-
-.footer-info p{
-    margin: 20px 0;
-    text-align: center;
-    font-size: 12px;
-}
-
-
-.footer-info .footer-icons{
+.font_form{
     display: flex;
-    justify-content: center;
     align-items: center;
-    list-style: none;
-    gap: 100px;
-    margin-top: 20px;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -200px;
+    left: 15px;
+  
 }
 
+
+.font_form form{
+    width: 100%;
+    padding: 85px 20px;
+    background: #fff;
+    position: absolute;
+    border-radius: 20px;
+
+}
+
+.font_form form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #46A2FD;
+}
+.font_form form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+
+.font_form form .btn_center{
+    display: flex;
+    justify-content: space-around;
+}
+.font_form form button{
+    padding: 10px 40px;
+    margin-top: 50px;
+    border: none;
+    font-size: 16px;
+    background: #7fbefc;
+    cursor: pointer;
+    outline: none;
+}
+.font_form form .button-login:hover{
+    background: #67ea6d;
+color:#000000 ;
+}
+.font_form form .button-back:hover{
+    background: #ea6967;
+color:#000000 ;
+}
