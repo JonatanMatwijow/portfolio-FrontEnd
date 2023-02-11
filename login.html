@@ -11,62 +11,35 @@
 
 <body>
     <main>
-        <form>
-            <section id="login">
-                <div class="img-perfil">
-                    <img class="img-perfil-login" src="https://avatars.githubusercontent.com/u/46876355?v=4"
-                        title="Foto perfil">
+        <section class="contenedor_general">
+            <div class="back_form">
+                <div>
+                    <h3>Hola Admin, bienvenido!!</h3>
+                    <span>El inicio de sesión solo esta disponible para el administrador. <br> Si usted no lo es, vuelva atras. </span>
                 </div>
-            </section>
+            </div>
 
-            <section class="border-login">
+            <div class="font_form">
+                <form>
+                    <h2>Iniciar Sesión</h2>
+                    <input type="text" placeholder="Usuario">
 
-                <h1>Welcome. Whats up?</h1>
+                    <input type="text" placeholder="Contraseña">
 
-                <input class="input-" type="text" placeholder="Usuario">
+                    <div class="btn_center">
+                        <button class="button-login" type="button" onclick="alert('Aqui deberias poder logearte')"
+                            id="btn_inicarSesion">
+                            Entrar</button>
 
-                <input class="input-" type="text" placeholder="Contraseña">
-
-                <button class="bottom-login" type="button" onclick="alert('Aqui deberias poder logearte')">
-                    Entrar </button>
-
-                <a href="/index.html">
-                    <button class="bottom-back" type="button">
-                        Volver </button>
-                </a>
-            </section>
-        </form>
-        <div>
-            <span>
-                *Solo el administrador del sitio podra iniciar sesión, con el fin de modificar el contenido del mismo.
-            </span>
-        </div>
+                        <a href="/index.html">
+                            <button class="button-back" type="button">
+                                Volver </button>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
-
-    <footer class="footer-info">
-        <hr>
-        <div>
-            <ul class="footer-icons">
-                <li>
-                    <a href="https://github.com/JonatanMatwijow">
-                        <img src="https://img.icons8.com/ios/50/null/github--v1.png" title="Logo Github" />
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="https://img.icons8.com/ios/50/null/twitter-squared.png" title="Logo Twitter" />
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="https://img.icons8.com/ios/50/null/linkedin.png" title="Logo LinkedIn" />
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <p class="textCenter"> &copy; Diseñado y creado por Jonatan Matwijow </p>
-    </footer>
 </body>
 
 </html>
