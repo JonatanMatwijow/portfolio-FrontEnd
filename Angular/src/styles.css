@@ -205,7 +205,10 @@ main .botonesTitulo {
     margin-bottom: 15px;
     padding-right: 15px;
 }
-
+main .botonesTitulo .botones a, 
+main .botonesTitulo .botones button{
+	margin: 5px;
+}
 
 
 main .txt_sobre_mi {
