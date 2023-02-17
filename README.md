@@ -1,4 +1,4 @@
 # portfolio-FrontEnd
 
 
-practicando git en el curso
+Porfolio personal creado en el transcurso del curso de #YoProgramo
