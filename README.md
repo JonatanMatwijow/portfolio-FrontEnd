@@ -1,4 +1,6 @@
 # portfolio-FrontEnd
 
 
-practicando git en el curso
+<h4 align="center">
+:construction: Proyecto en construcción :construction:
+</h4>
