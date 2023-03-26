@@ -2,11 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-color: #f3f2ef; */
-    font-family: monospace;
+    font-family: /*'IBM Plex Sans Condensed', sans-serif;*/ 'Itim', cursive;
 }
 
-/* Estas 2 lineas serian en el caso que desee agregar una imagen de back, y que las card no tengan color de fondo. 
+/* Estas 2 lineas serian en el caso que desee agregar una imagen de back, y que las card no tengan color de fondo
 body{
     background-image: url(../Img/cool-background.png) ;
 }
@@ -142,24 +141,30 @@ header .navbar-links ul .nav-bottom-login a {
     color: #95f00c;
 }
 
-main {
-    margin: 90px 40px 0 40px;
+
+main p{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
 }
 
+main h2{
+    font-size: 2.25rem;
+    line-height: 1.75rem;
+}
 main ul {
     list-style: none !important;
 }
 
-main section {
+/* main section {
     border: 1px solid black;
     border-radius: 15px;
     margin-top: 20px;
     margin-bottom: 20px;
-}
+} */
 
 main .the-banner {
     width: 100%;
-    height: 480px;
+    height: 500px;
     border-radius: 15px 15px 0 0;
 }
 
@@ -363,18 +368,15 @@ main .form__ .box-form-right form div input{
     padding: 10px;
     border: none;
     background: #f2f2f2;
-    font-size: 12px;
+    font-size: 1.2rem;
     outline: none;
 }
 main .form__ .box-form-right form div textarea{
     height: 150px;
     width: 100%;
     margin-top: 20px;
-}
-
-main .form__ .box-form-right form input{
-    margin-top: 20px;
-    font-size: 12px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
 }
 
 /* ---------------------------------------------------
