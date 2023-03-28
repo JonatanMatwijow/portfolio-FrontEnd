@@ -7,27 +7,26 @@
 body{
     background-color: #f7f8ed;
 }
+
+
+/* Estas lineas son de las divisiones entre secciones */
+.divisiones{
+    display: flex;
+    justify-content: center;
+}
+.divisiones-entre-secciones{
+    width: 40%;
+    border: 1px solid #4e7dbc;
+
+}
+
 /* Estas 2 lineas serian en el caso que desee agregar una imagen de back, y que las card no tengan color de fondo
 body{
     background-image: url(../Img/cool-background.png) ;
-}
-.card{
-    --bs-card-bg: var(--bs-body-bg) none !important;
-} */
+}*/
 
-/* cambios para que las imagenes de las cards se vean mas justos al texto */
-#img-card {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-    padding-top: 13px;
-    padding-right: 13px;
-}
 
-/* esta linea modifica las cards, se elimina el borderbox */
-#border-card {
-    border: none;
-}
+
 
 /*Esta linea de modifica el tamaño del area del modal para que se aprecie completo el certificado*/
 .modal {
@@ -84,11 +83,6 @@ header .navbar-links .container-logo-navbar {
     padding-left: 10px;
 
 }
-
-/* header .navbar-links .container-logo-navbar .logo-navbar {
-    width: 170px;
-    height: 90px;
-} */
 
 header .navbar-links ul {
     display: flex;
@@ -223,27 +217,44 @@ main .logo-cap a img {
 
 }
 
-
-/* Estilos de los logos de las empresas, dentro de las cajitas */
-
-main .dif-sections .logo-empresa {
-    width: 100px;
-    height: 100px;
-
+main .items_cards{
+    display: flex;
+    justify-content: center;
 }
 
-main .dif-sections .descripcion {
+
+/* Estilos de los logos de las empresas, dentro de las cajitas */
+main .col-card {
+    width: 200px;
+}
+
+main .col-md-8{
+text-align: justify;
+}
+
+main .row{
+  justify-content: space-evenly;
+}
+
+/* cambios para que las imagenes de las cards se vean mas justos al texto */
+#img-card {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
-    padding-bottom: 10px;
+    padding-top: 13px;
+    padding-right: 13px;
 }
 
-main .dif-sections .descripcion p {
-    margin: 0;
+/* esta linea modifica las cards, se elimina el borderbox */
+#border-card {
+    border: none;
 }
 
+/* esta linea quita el color de fondo de las cards */
+.card{
+    --bs-card-bg: var(--bs-body-bg) none !important;
+    max-width: 70% !important;
+} 
 
 
 
