@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: /*'IBM Plex Sans Condensed', sans-serif;*/ 'Itim', cursive;
+    font-family:  'Itim', cursive;
 }
-
+body{
+    background-color: #f7f8ed;
+}
 /* Estas 2 lineas serian en el caso que desee agregar una imagen de back, y que las card no tengan color de fondo
 body{
     background-image: url(../Img/cool-background.png) ;
@@ -53,7 +55,7 @@ header {
 }
 
 header a {
-    color: white;
+    color: #f7f8ed;
 }
 
 header .navbar {
@@ -78,67 +80,60 @@ header .navbar-links .container-logo-navbar {
     width: 50%;
     height: 50px;
     align-items: center;
-    color: white;
+    color: #f7f8ed;
     padding-left: 10px;
 
 }
 
-header .navbar-links .container-logo-navbar .logo-navbar {
+/* header .navbar-links .container-logo-navbar .logo-navbar {
     width: 170px;
     height: 90px;
-}
+} */
 
 header .navbar-links ul {
     display: flex;
     justify-content: flex-end;
-    width: 50%;
     align-items: center;
+    width: 50%;
+    height: 50px;
     gap: 50px;
     list-style: none;
     padding-right: 30px;
+    margin-bottom: 0px;
 }
 
-header .navbar-links ul .nav-icons {
-    width: 33px;
-    height: 33px;
-    color: white;
+ .fa-2xl{ 
+    font-size: 1.5rem !important; 
+    line-height: .03125em;
+    vertical-align: .1875em;
 }
-
-header .navbar-links ul .nav-bottom-login {
-    border: 1px solid white;
-    color: white;
+ header .navbar-links ul .nav-bottom-login {
+    color: #f7f8ed;
     padding: 5px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 32px;
-}
-
-header .navbar-links ul .nav-bottom-login a {
-    text-decoration: none;
-    color: white;
-    padding-left: 10px;
+    height: 40px;
 }
 
 /* Estas lineas hacen que los iconos cambien de color al pasar el mouse */
 .fa-brands.fa-github.fa-2xl:hover {
-    color: #95f00c;
+    color: #4e7dbc;
 }
 
 .fa-brands.fa-twitter.fa-2xl:hover {
-    color: #95f00c;
+    color: #4e7dbc;
 }
 
 .fa-brands.fa-linkedin-in.fa-2xl:hover {
-    color: #95f00c;
+    color: #4e7dbc;
 }
 
 .fa-solid.fa-envelope.fa-2xl:hover {
-    color: #95f00c;
+    color: #4e7dbc;
 }
 
-.fa-solid.fa-right-to-bracket.fa-lg.nav-bottom-login:hover {
-    color: #95f00c;
+.fa-solid.fa-right-to-bracket.fa-2xl.nav-bottom-login:hover {
+    color: #4e7dbc;
 }
 
 
@@ -164,8 +159,8 @@ main ul {
 
 main .the-banner {
     width: 100%;
-    height: 500px;
-    border-radius: 15px 15px 0 0;
+    height: 50vh;
+    /* border-radius: 15px 15px 0 0; */
 }
 
 main .container-img-perfil {
@@ -175,10 +170,8 @@ main .container-img-perfil {
 }
 
 main .img-perfil {
-    border-radius: 50%;
-    border: 5px solid white;
-    width: 250px;
-
+    width: 150px;
+    height: 150px;
 }
 
 /* linea de boton editar banner */
@@ -209,15 +202,14 @@ main .botonesTitulo {
     justify-content: flex-end;
     margin-bottom: 15px;
     padding-right: 15px;
+    font-size: 1.1rem;
 }
-
 
 
 main .txt_sobre_mi {
     width: 60%;
     margin: auto;
     text-align: center;
-
 }
 
 main .logo-cap {
@@ -270,7 +262,8 @@ de las diferentes secciones, estan todos juntos.  */
 
 .title-section {
     width: 50%;
-    margin: 15px 15px 30px 15px;
+    margin: 20px 15px 30px 15px;
+    padding-left: 100px;
 }
 
 .botons-edit-trash {
