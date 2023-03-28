@@ -17,6 +17,7 @@
 
     <!-- <link rel="stylesheet" href="Styles/login.css"> -->
     <script src="https://kit.fontawesome.com/6dc4fe4844.js" crossorigin="anonymous"></script>
+    
     <!--Activar Modal -->
     <script src="script.js"></script>
 
@@ -29,8 +30,8 @@
             <div class="navbar-links">
                 <div class="container-logo-navbar">
                     <a href="https://desa.argentinaprograma.inti.gob.ar/" target="_blank">
-                        <img class="logo-navbar"
-                            src="https://desa.argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1660276176/APLogo-20-20.png"
+                            <img class="logo-navbar"
+                            src="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1676134779/Dise%C3%B1o%20sin%20t%C3%ADtulo%20%2817%29.png"
                             title="Logo de Argentina Programa">
                     </a>
                 </div>
@@ -60,9 +61,8 @@
                     </li>
 
                     <li>
-
-                        <i class="fa-solid fa-right-to-bracket fa-lg nav-bottom-login" type="button">
-                            <a href="./login.html">Login </a>
+                        <i class="fa-solid fa-right-to-bracket fa-2xl nav-bottom-login" type="button">
+                            <a href="./login.html"></a>
                         </i>
                     </li>
                 </ul>
@@ -73,34 +73,49 @@
     <main>
         <section class="section-personal" id="inicio">
             <div class="container-banner">
-                <img class="the-banner" src="./Img/banner.png" class="img-fluid" alt="...">
+                <img class="the-banner" src="./img/Captura desde 2023-03-27 21-44-29.png" class="img-fluid" alt="...">
             </div>
 
             <div class="container-img-perfil">
-                <img class="img-perfil img-fluid" src="https://avatars.githubusercontent.com/u/46876355?v=4"
+                <img class="img-perfil rounded-4" src="https://avatars.githubusercontent.com/u/46876355?v=4"
                     title="Foto perfil">
             </div>
 
-
-            <div class="tituloPrincipal">
-                <div class="datos">
-                    <h1>Jonatan Matwijow</h1>
-                    <h4>Full Stack Developer Junior </h4>
+                <div class="tituloPrincipal">
+                     <div class="datos">
+                        <h1>Jonatan Matwijow</h1>
+                        <h4>Full Stack Developer Junior </h4>
+                    </div>
                 </div>
-            </div>
 
             <div class="botonesTitulo">
-                <div class="botones">
-                    <a href="#sobreMi" type="button" class="btn btn-outline-secondary">Quien soy?</a>
-                    <a href="#experiencia" type="button" class="btn btn-outline-secondary">Experiencia</a>
-                    <a href="#educacion" type="button" class="btn btn-outline-secondary">Educacion</a>
-                    <a href="#habilidades" type="button" class="btn btn-outline-secondary">Habilidades</a>
-                    <a href="#proyectos" type="button" class="btn btn-outline-secondary">Proyectos</a>
-                    <a href="#contacto" type="button" class="btn btn-outline-secondary">Contacto</a>
-
-                    <!-- Boton modal descarga-->
-                    <button type="button" class="btn btn-outline-info" data-bs-toggle="modal"
-                        data-bs-target="#descargaCV">Descargar CV</button>
+    
+                <div>
+                    <ul class="nav nav-tabs">
+                         <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#sobreMi">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                             <a class="nav-link" href="#experiencia">Experiencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#educacion">Educacion</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="#habilidades">Habilidades</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="#proyecto">Proyectos</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                             <a class="nav-link" type="button" data-bs-toggle="modal"
+                        data-bs-target="#descargaCV">Descargar CV</a>
+                        </li>
+                    </ul>
+                </div>
 
                     <!-- Modal Descarga CV-->
                     <div class="modal" id="descargaCV" tabindex="-1">
@@ -122,10 +137,10 @@
                             </div>
                         </div>
                     </div>
-
-                </div>
-            </div>
-
+                
+           
+            </div> 
+            </div>           
         </section>
 
         <!-- Seccion Acerca de mi -->
@@ -161,7 +176,7 @@
                     <div class="card mb-3" style="max-width: 65%;" id="border-card">
                         <div class="row g-0">
                             <div class="col-md-4" id="img-card">
-                                <img src="Img/8-bit.jpeg" class="img-fluid rounded-start logo-empresa"
+                                <img src="Img/8-bit.jpeg" /*class="img-fluidrounded-startlogo-empresa"*/ class="img-thumbnail"
                                     alt="logo de la empresa nombrada">
                             </div>
                             <div class="col-md-8">
@@ -185,7 +200,7 @@
                     <div class="card mb-3" style="max-width: 65%;" id="border-card">
                         <div class="row g-0">
                             <div class="col-md-4" id="img-card">
-                                <img src="Img/sai-logo.jpeg" alt="logo de la empresa nombrada">
+                                <img src="Img/sai-logo.jpeg" alt="logo de la empresa nombrada" class="img-thumbnail">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -217,13 +232,13 @@
             <div class="card mb-3" style="max-width: 65%;" id="border-card">
                 <div class="row g-0">
                     <div class="col-md-4" id="img-card">
-                        <img src="./Img/logo-imna.png" class="rounded float-start logo-empresa img-fluid" alt="...">
+                        <img src="./img/logo-imna.png" /*class="roundedfloat-startlogo-empresaimg-fluid"*/ class="img-thumbnail" alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title">INSTITUTO MODELO NUEVA ARGENTINA – BUENOS AIRES, ARGENTINA.</h5>
                             <p class="card-text">BACHILLER EN ECONOMÍA Y ADMINISTRACIÓN DE LAS ORGANIZACIONES.</p>
-                            <p class="card-text">
+                            < class="card-text">
                                 <small class="text-muted">Finalizado - Diciembre/2005</small>
                                 <!-- Button trigger modal -->
                                 <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
@@ -236,8 +251,7 @@
                                     </div>
                                 </div>
                             </div>
-                            </p>
-                        </div>
+                             </div>
                     </div>
                 </div>
             </div>
@@ -256,7 +270,7 @@
                     <div class="card mb-3" style="max-width: 65%;" id="border-card">
                         <div class="row g-0">
                             <div class="col-md-4" id="img-card">
-                                <img src="./Img/cool-background.png" class="img-fluid rounded-start logo-empresa"
+                                <img src="./Img/cool-background.png" /*class="img-fluidrounded-startlogo-empresa"*/ class="img-thumbnail"
                                     alt="...">
                             </div>
                             <div class="col-md-8">
@@ -634,7 +648,7 @@
                 <!-- En este div esta encerrado el form de contacto -->
                 <div class="box-form-right">
                     <form action="">
-                        <div>
+                        <div class="font__size">
                             <input type="text" placeholder="Nombre">
                             <input type="text" placeholder="Apellido"> 
                             <input type="text" placeholder="Correo Electronico">
