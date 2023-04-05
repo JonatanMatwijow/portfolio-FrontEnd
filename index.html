@@ -15,11 +15,9 @@
 
     <link rel="stylesheet" href="styles/main.css">
 
-    <!-- <link rel="stylesheet" href="Styles/login.css"> -->
     <script src="https://kit.fontawesome.com/6dc4fe4844.js" crossorigin="anonymous"></script>
-    
-    <!--Activar Modal -->
-    <script src="script.js"></script>
+
+
 
     <title>Profolio - Jonatan Matwijow</title>
 </head>
@@ -30,7 +28,7 @@
             <div class="navbar-links">
                 <div class="container-logo-navbar">
                     <a href="https://desa.argentinaprograma.inti.gob.ar/" target="_blank">
-                            <img class="logo-navbar"
+                        <img class="logo-navbar"
                             src="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1676134779/Dise%C3%B1o%20sin%20t%C3%ADtulo%20%2817%29.png"
                             title="Logo de Argentina Programa">
                     </a>
@@ -59,9 +57,12 @@
                     </li>
 
                     <li>
-                        <i class="fa-solid fa-right-to-bracket fa-2xl nav-bottom-login" type="button">
-                            <a href="./login.html"></a>
-                        </i>
+
+                        <a href="./login.html">
+                            <!-- <i class="fa-solid fa-right-to-bracket fa-2xl nav-bottom-login" type="button"></i> -->
+                            <i class="fa-regular fa-circle-user fa-2xl"></i>
+                        </a>
+
                     </li>
                 </ul>
             </div>
@@ -79,66 +80,72 @@
                     title="Foto perfil">
             </div>
 
-                <div class="tituloPrincipal">
-                     <div class="datos">
-                        <h1>Jonatan Matwijow</h1>
-                        <h4>Full Stack Developer Junior </h4>
-                    </div>
+            <div class="tituloPrincipal">
+                <div class="datos">
+                    <h1>Jonatan Matwijow</h1>
+                    <h4>Full Stack Developer Junior </h4>
+                </div>
+                <!-- boton de agregar -->
+                <div class="botons-edit">
+                    <i class="fa-solid fa-pencil" type="button"></i>
                 </div>
 
+
+            </div>
+
             <div class="botonesTitulo">
-    
+
                 <div>
                     <ul class="nav nav-tabs">
-                         <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#sobreMi">Sobre mi</a>
                         </li>
                         <li class="nav-item">
-                             <a class="nav-link" href="#experiencia">Experiencia</a>
+                            <a class="nav-link" href="#experiencia">Experiencia</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#educacion">Educacion</a>
                         </li>
-                         <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="#habilidades">Habilidades</a>
                         </li>
-                         <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="#proyecto">Proyectos</a>
                         </li>
-                         <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="#contacto">Contacto</a>
                         </li>
                         <li class="nav-item">
-                             <a class="nav-link" type="button" data-bs-toggle="modal"
-                        data-bs-target="#descargaCV">Descargar CV</a>
+                            <a class="nav-link" type="button" data-bs-toggle="modal"
+                                data-bs-target="#descargaCV">Descargar CV</a>
                         </li>
                     </ul>
                 </div>
 
-                    <!-- Modal Descarga CV-->
-                    <div class="modal" id="descargaCV" tabindex="-1">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Descarga CV</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Si esta de acuerdo puede descargar el CV en formato PDF</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Cerrar</button>
-                                    <button type="button" class="btn btn-primary">Descargar</button>
-                                </div>
+                <!-- Modal Descarga CV-->
+                <div class="modal" id="descargaCV" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Descarga CV</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Si esta de acuerdo puede descargar el CV en formato PDF</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Descargar</button>
                             </div>
                         </div>
                     </div>
-                
-           
-            </div> 
-            </div>           
+                </div>
+
+
+            </div>
+
+
         </section>
 
         <!-- Seccion Acerca de mi -->
@@ -146,6 +153,12 @@
             <div class="container-titulo-iconos">
                 <div class="title-section" id="sobreMi">
                     <h2><u>Sobre mi</u></h2>
+                </div>
+
+                <!-- botones de agregar y eliminar -->
+                <div class="botons-edit-trash">
+                    <i class="fa-solid fa-pencil" type="button"></i>
+                    <i class="fa-regular fa-trash-can" type="button"></i>
                 </div>
             </div>
 
@@ -173,56 +186,60 @@
                 <div class="title-section" id="experiencia">
                     <h2><u>Experiencia</u></h2>
                 </div>
+                <!-- botones de agregar y eliminar -->
+                <div class="botons-edit-trash">
+                    <i class="fa-solid fa-pencil" type="button"></i>
+                    <i class="fa-regular fa-trash-can" type="button"></i>
+                </div>
             </div>
 
-        <div class="items_cards">
-            <div class="card mb-3" style="max-width: 70%;" id="border-card">
-                <div class="row g-0">
-                    <div class="col-card" id="img-card">
-                        <img src="img/8-bit.jpeg" class="img-thumbnail"
-                            alt="logo de la empresa nombrada">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">ANALISTA DE INVESTIGACION (FREELANCE) - 8-BIT & SHERBLOQ</h5>
-                            <p class="card-text">Empresa dedicada al asesoramiento de proyectos basados en la
-                                tecnología Blockchain. Realizaba análisis de proyectos, investigando si los
-                                mismos eran sustentables, en qué etapa estaba el proyecto, sus actuales o
-                                futuros rivales. Y, entre otras observaciones, de las cuales podrian colaborar
-                                para la confeccion de un informe sobre el mismo. Tambien realizaba análisis de
-                                mercados, tanto técnico como fundamental. En ambas empresas realizaba las mismas
-                                tareas, ya que Sherbloq nació de una fusión entre empleados de 8-Bit.</p>
-                            <p class="card-text"><small class="text-muted">JUNIO DE 2018 – DICIEMBRE DE
-                                    2019.</small></p>
+            <div class="items_cards">
+                <div class="card md-3 efecto_card estilos_" id="border-card">
+                    <div class="row g-0">
+                        <div class="col-card" id="img-card">
+                            <img src="img/8-bit.jpeg" class="img-thumbnail" alt="logo de la empresa nombrada">
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">ANALISTA DE INVESTIGACION (FREELANCE) - 8-BIT & SHERBLOQ</h5>
+                                <p class="card-text">Empresa dedicada al asesoramiento de proyectos basados en la
+                                    tecnología Blockchain. Realizaba análisis de proyectos, investigando si los
+                                    mismos eran sustentables, en qué etapa estaba el proyecto, sus actuales o
+                                    futuros rivales. Y, entre otras observaciones, de las cuales podrian colaborar
+                                    para la confeccion de un informe sobre el mismo. Tambien realizaba análisis de
+                                    mercados, tanto técnico como fundamental. En ambas empresas realizaba las mismas
+                                    tareas, ya que Sherbloq nació de una fusión entre empleados de 8-Bit.</p>
+                                <p class="card-text"><small class="text-muted">Junio/2018 - Diciembre/2019.</small></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="items_cards">
-            <div class="card mb-3" style="max-width: 70%;" id="border-card">
-                <div class="row g-0">
-                    <div class="col-card" id="img-card">
-                        <img src="img/sai-logo.jpeg" alt="logo de la empresa nombrada" class="img-thumbnail">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">AYUDANTE Y BANDERILLERO DE TRANSPORTE - SAN ANTONIO
-                                INTERNACIONAL S.A.</h5>
-                            <p class="card-text">Traslados de equipos de locación a locación. Aprendí a trabajar
-                                con cuidado y atención, para trabajar de forma segura y eficiente y habiéndome
-                                desempeñado con cero incidentes y/o accidente. Como resultado, aprendí a manejar
-                                camiones e hidro grúas, por 1 ½ año estuve desempeñando la tarea de chofer hidro
-                                gruista.</p>
-                            <p class="card-text"><small class="text-muted">MAYO DE 2013 - NOVIEMBRE DE
-                                    2017</small></p>
+            <div class="items_cards">
+                <div class="card mb-3 efecto_card estilos_" id="border-card">
+                    <div class="row g-0">
+                        <div class="col-card" id="img-card">
+                            <img src="img/sai-logo.jpeg" alt="logo de la empresa nombrada" class="img-thumbnail">
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">AYUDANTE Y BANDERILLERO DE TRANSPORTE - SAN ANTONIO
+                                    INTERNACIONAL S.A.</h5>
+                                <p class="card-text">Traslados de equipos de locación a locación. Aprendí a trabajar
+                                    con cuidado y atención, para trabajar de forma segura y eficiente y habiéndome
+                                    desempeñado con cero incidentes y/o accidente. Como resultado, aprendí a manejar
+                                    camiones e hidro grúas, por 1 ½ año estuve desempeñando la tarea de chofer hidro
+                                    gruista.</p>
+                                <p class="card-text"><small class="text-muted">Mayo/2013 - Noviembre/2017</small></p>
+                            </div>
                         </div>
                     </div>
-                    
                 </div>
+
             </div>
-        </div>
         </section>
 
         <div class="divisiones">
@@ -236,41 +253,47 @@
                 <div class="title-section" id="educacion">
                     <h2><u>Educación</u></h2>
                 </div>
+                <!-- botones de agregar y eliminar -->
+                <div class="botons-edit-trash">
+                    <i class="fa-solid fa-pencil" type="button"></i>
+                    <i class="fa-regular fa-trash-can" type="button"></i>
+                </div>
             </div>
 
             <div class="items_cards">
-                <div class="card mb-3" style="max-width: 70%;" id="border-card">
+                <div class="card mb-3 efecto_card estilos_" id="border-card">
                     <div class="row g-0">
                         <div class="col-card" id="img-card">
                             <img src="./img/logo-imna.png" class="img-thumbnail" alt="logo instituto de estudios">
                         </div>
+
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">INSTITUTO MODELO NUEVA ARGENTINA – BUENOS AIRES, ARGENTINA.</h5>
-                                <p class="card-text">BACHILLER EN ECONOMÍA Y ADMINISTRACIÓN DE LAS ORGANIZACIONES.</p>
+                                <h5 class="card-title">INSTITUTO MODELO NUEVA ARGENTINA - BUENOS AIRES, ARGENTINA.</h5>
+                                <p class="card-text">Bachiller en Economia y Administración de las Organizaciones.</p>
 
                                 <div class="card-text">
-                                    <small class="text-muted">Finalizado - Diciembre/2005</small>
-                                    
+                                    <p><small class="text-muted">Finalizado - Diciembre/2005</small></p>
                                     <!-- Button trigger modal -->
                                     <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
                                         data-bs-target="#exampleModal">Certificado</button>
 
-                                        <!-- Modal -->
+                                    <!-- Modal -->
                                     <div class="modal fade" id="exampleModal" tabindex="-1">
                                         <div class="modal-dialog">
                                             <div class="modal-body">
-                                                <img src="./Img/cert1.png" alt="certificado de acreditacion de estudio">
+                                                <img src="./img/cert1.png" alt="certificado de acreditacion de estudio">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
-            
+
         </section>
 
         <div class="divisiones">
@@ -284,140 +307,263 @@
                 <div class="title-section" id="capacitaciones">
                     <h2><u>Capacitaciones</u></h2>
                 </div>
+                <!-- botones de agregar y eliminar -->
+                <div class="botons-edit-trash">
+                    <i class="fa-solid fa-pencil" type="button"></i>
+                    <i class="fa-regular fa-trash-can" type="button"></i>
+                </div>
             </div>
 
             <ul>
                 <li>
-                    <div class="card mb-3" style="max-width: 65%;" id="border-card">
-                        <div class="row g-0">
-                            <div class="col-md-4" id="img-card">
-                                <img src="./Img/cool-background.png" /*class="img-fluidrounded-startlogo-empresa"*/ class="img-thumbnail"
-                                    alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">FUNDAMENTOS DE LA LÓGICA DE LA PROGRAMACIÓN - EEG CORPORATION
-                                    </h5>
-                                    <p class="card-text">La capacitación se basa en aprender a desarrollar el
-                                        pensamiento lógicoalgorítmico detrás de las aplicaciones. Aprender a programar
-                                        en lenguaje nativo, en pseudocódigo y a comprender los fundamentos de la lógica.
-                                        Consto con una duración de 81Hs cátedras, teórico y práctico, siendo 100%
-                                        Online.</p>
-                                    <p class="card-text">
-                                        <small class="text-muted">APROBADO – AGOSTO/2022.</small>
+                    <div class="items_cards">
+                        <div class="card mb-3" style="max-width: 70%;" id="border-card">
+                            <div class="row g-0">
+                                <div class="col-card" id="img-card">
+                                    <img src="img/sai-logo.jpeg" alt="logo del instituto" class="img-thumbnail">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">FUNDAMENTOS DE LA LÓGICA DE LA PROGRAMACIÓN - EEG
+                                            CORPORATION
+                                        </h5>
+                                        <p class="card-text">La capacitación se basa en aprender a desarrollar el
+                                            pensamiento lógicoalgorítmico detrás de las aplicaciones. Aprender a
+                                            programar
+                                            en lenguaje nativo, en pseudocódigo y a comprender los fundamentos de la
+                                            lógica.
+                                            Consto con una duración de 81Hs cátedras, teórico y práctico, siendo 100%
+                                            Online.</p>
+                                        <p class="card-text">
+                                            <small class="text-muted">APROBADO – Agosto/2022.</small>
+                                        </p>
 
                                         <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
                                             data-bs-target="#descargaCV2">Certificado</button>
 
-                                    <div class="modal" id="descargaCV2" tabindex="-1">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title">Certificado</h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                        aria-label="Close"></button>
-                                                </div>
+                                        <div class="modal" id="descargaCV2" tabindex="-1">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Certificado</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
 
-                                                <div class="modal-body">
-                                                    <img src="./Img/cert1.png" alt="...">
+                                                    <div class="modal-body">
+                                                        <img src="./Img/cert1.png" alt="...">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="card mb-3" style="max-width: 65%;" id="border-card">
-                        <div class="row g-0">
-                            <div class="col-md-4" id="img-card">
-                                <img src="./Img/cool-background.png" class="img-fluid rounded-start logo-empresa"
-                                    alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title"> CURSO DE PROGRAMACION BASICO (HTML5 Y JAVASCRIPT) PLATZI.COM
-                                    </h5>
-                                    <p class="card-text"> Curso básico de introducción a la programación, con ejercicios
-                                        aplicables a un
-                                        ambiente laboral. Cursado 100% Online. Cursado en 34hs teoría y prácticas</p>
-                                    <p class="card-text"><small class="text-muted">APROBADO – Julio/2022</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="card mb-3" style="max-width: 65%;" id="border-card">
-                        <div class="row g-0">
-                            <div class="col-md-4" id="img-card">
-                                <img src="./Img/cool-background.png" class="img-fluid rounded-start logo-empresa"
-                                    alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title"> DESARROLLO WEB (HTML5 Y CSS)- POTRERO DIGITAL</h5>
-                                    <p class="card-text"> Durante el desarrollo de la cursada también se dictaron
-                                        asignaturas como Ingles y Habilidades Blandas. Cursado 100% Online, Finalizado
-                                        en un total de duración de 16 semanas.</p>
-                                    <p class="card-text"><small class="text-muted">APROBADO – Diciembre/2020</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="card mb-3" style="max-width: 65%;" id="border-card">
-                        <div class="row g-0">
-                            <div class="col-md-4" id="img-card">
-                                <img src="./Img/cool-background.png" class="img-fluid rounded-start logo-empresa"
-                                    alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5>CAPACITACIÓN EN IDIOMA INGLES - CULTURAL INGLESA</h5>
-                                    <p class="card-text"> NIVEL CURSADO “B1”</p>
-                                    <p class="card-text"><small class="text-muted">APROBADO – Diciembre/2018</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="card mb-3" style="max-width: 65%;" id="border-card">
-                        <div class="row g-0">
-                            <div class="col-md-4" id="img-card">
-                                <img src="./Img/cool-background.png" class="img-fluid rounded-start logo-empresa"
-                                    alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5>SISTEMA SAP - XIGMA (CONSULTORÍA OFICIAL SAP)</h5>
-                                    <p class="card-text"> Capacitación en sistema SAP a nivel usuario con una duración
-                                        de 32hs catedra.
-                                        Practico – Teórico. Cursado 100% Online </p>
-                                    <p class="card-text"><small class="text-muted">APROBADO – Diciembre/2018</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
 
-                <li>
-                    <div class="card mb-3" style="max-width: 65%;" id="border-card">
-                        <div class="row g-0">
-                            <div class="col-md-4" id="img-card">
-                                <img src="./Img/cool-background.png" class="img-fluid rounded-start logo-empresa"
-                                    alt="...">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5>LIQUIDACIÓN DE SUELDOS Y JORNALES - UBA – BUENOS AIRES, ARGENTINA</h5>
-                                    <p class="card-text"> Cursado presencial con una duración de 32HS Cátedras.</p>
-                                    <p class="card-text"><small class="text-muted">APROBADO – Diciembre/2011</small></p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="items_cards">
+                        <div class="card mb-3" style="max-width: 70%;" id="border-card">
+                            <div class="row g-0">
+                                <div class="col-card" id="img-card">
+                                    <img src="img/sai-logo.jpeg" alt="logo del instituto" class="img-thumbnail">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title"> CURSO DE PROGRAMACION BASICO (HTML5 Y JAVASCRIPT)
+                                            PLATZI.COM
+                                        </h5>
+                                        <p class="card-text"> Curso básico de introducción a la programación, con
+                                            ejercicios
+                                            aplicables a un
+                                            ambiente laboral. Cursado 100% Online. Cursado en 34hs teoría y prácticas
+                                        </p>
+                                        <p class="card-text"><small class="text-muted">APROBADO – Julio/2022</small></p>
+
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                            data-bs-target="#descargaCV2">Certificado</button>
+
+                                        <div class="modal" id="descargaCV2" tabindex="-1">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Certificado</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+
+                                                    <div class="modal-body">
+                                                        <img src="./Img/cert1.png" alt="...">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="items_cards">
+                        <div class="card mb-3" style="max-width: 70%;" id="border-card">
+                            <div class="row g-0">
+                                <div class="col-card" id="img-card">
+                                    <img src="img/sai-logo.jpeg" alt="logo del instituto" class="img-thumbnail">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title"> DESARROLLO WEB (HTML5 Y CSS)- POTRERO DIGITAL</h5>
+                                        <p class="card-text"> Durante el desarrollo de la cursada también se dictaron
+                                            asignaturas como Ingles y Habilidades Blandas. Cursado 100% Online,
+                                            Finalizado
+                                            en un total de duración de 16 semanas.</p>
+                                        <p class="card-text"><small class="text-muted">APROBADO – Diciembre/2020</small>
+                                        </p>
+
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                            data-bs-target="#descargaCV2">Certificado</button>
+
+                                        <div class="modal" id="descargaCV2" tabindex="-1">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Certificado</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+
+                                                    <div class="modal-body">
+                                                        <img src="./Img/cert1.png" alt="...">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="items_cards">
+                        <div class="card mb-3" style="max-width: 70%;" id="border-card">
+                            <div class="row g-0">
+                                <div class="col-card" id="img-card">
+                                    <img src="img/sai-logo.jpeg" alt="logo del instituto" class="img-thumbnail">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5>CAPACITACIÓN EN IDIOMA INGLES - CULTURAL INGLESA</h5>
+                                        <p class="card-text"> Nivel cursado “B1”</p>
+                                        <p class="card-text"><small class="text-muted">APROBADO – Diciembre/2018</small>
+                                        </p>
+
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                            data-bs-target="#descargaCV2">Certificado</button>
+
+                                        <div class="modal" id="descargaCV2" tabindex="-1">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Certificado</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+
+                                                    <div class="modal-body">
+                                                        <img src="./Img/cert1.png" alt="...">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="items_cards">
+                        <div class="card mb-3" style="max-width: 70%;" id="border-card">
+                            <div class="row g-0">
+                                <div class="col-card" id="img-card">
+                                    <img src="img/sai-logo.jpeg" alt="logo del instituto" class="img-thumbnail">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5>SISTEMA SAP - XIGMA (CONSULTORÍA OFICIAL SAP)</h5>
+                                        <p class="card-text"> Capacitación en sistema SAP a nivel usuario con una
+                                            duración
+                                            de 32hs catedra.
+                                            Practico – Teórico. Cursado 100% Online </p>
+                                        <p class="card-text"><small class="text-muted">APROBADO – Diciembre/2018</small>
+                                        </p>
+
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                            data-bs-target="#descargaCV2">Certificado</button>
+
+                                        <div class="modal" id="descargaCV2" tabindex="-1">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Certificado</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+
+                                                    <div class="modal-body">
+                                                        <img src="./Img/cert1.png" alt="...">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="items_cards">
+                        <div class="card mb-3" style="max-width: 70%;" id="border-card">
+                            <div class="row g-0">
+                                <div class="col-card" id="img-card">
+                                    <img src="img/sai-logo.jpeg" alt="logo del instituto" class="img-thumbnail">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5>LIQUIDACIÓN DE SUELDOS Y JORNALES - UBA – BUENOS AIRES, ARGENTINA</h5>
+                                        <p class="card-text"> Cursado presencial con una duración de 32HS Cátedras.</p>
+                                        <p class="card-text"><small class="text-muted">APROBADO – Diciembre/2011</small>
+                                        </p>
+
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                            data-bs-target="#descargaCV2">Certificado</button>
+
+                                        <div class="modal" id="descargaCV2" tabindex="-1">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Certificado</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+
+                                                    <div class="modal-body">
+                                                        <img src="./img/cert1.png" alt="...">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -425,91 +571,6 @@
                 </li>
             </ul>
         </section>
-
-        <!-- Analizar si va a ir o debo elimar la seccion completa -->
-        <!-- Seccion Certificados
-        <section class="dif-sections">
-            <div class="container-titulo-iconos">
-                <div class="title-section">
-                    <h2><u>Certificados </u></h2>
-                </div>
-            </div>
-            cards de certificados
-            <div class="row row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card">
-                        <img src="./Img/cert1.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">YoProgramo</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="./Img/cert2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Certificado</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="./Img/cert2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="./Img/cert2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="./Img/cert2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural
-                                lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="./Img/cert2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a
-                                natural lead-in to additional content. This content is a little bit
-                                longer.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="./Img/cert2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text
-                                below as a natural lead-in to additional content. This content
-                                is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
 
         <div class="divisiones">
             <div class="divisiones-entre-secciones">
@@ -522,31 +583,73 @@
                 <div class="title-section" id="proyectos">
                     <h2><u> Proyectos </u></h2>
                 </div>
+                <!-- botones de agregar y eliminar -->
+                <div class="botons-edit-trash">
+                    <i class="fa-solid fa-pencil" type="button"></i>
+                    <i class="fa-regular fa-trash-can" type="button"></i>
+                </div>
             </div>
 
-            <!-- Cards de proyectos-->
-            <div class="row row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card">
-                        <img src="https://static.platzi.com/media/user_upload/mokepon-0bc19bb0-4649-4ac3-a268-6f9adb0a8f7b.jpg"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Mokepon</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                        </div>
+            <div class="col-md-12 container-card2">
+                <div class="card2 efecto_card">
+                    <img src="https://static.platzi.com/media/user_upload/mokepon-0bc19bb0-4649-4ac3-a268-6f9adb0a8f7b.jpg"
+                        class="card-img-top" alt="..." />
+                    <div class="card-body cardbody">
+                        <h5 class="card-title cardtitle">Mokepon</h5>
+                        <p class="card-text cardtxt">
+                            This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.
+                        </p>
+                    </div>
+
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Ver
+                            demostracion</a>
+
+                        <a href="#" class="btn btn-secondary" tabindex="-1" role="button"
+                            aria-disabled="true">GitHub</a>
+
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="Img/reee" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Portfolio personal</h5>
-                            <p class="card-text">Con este proyecto aprobe el curso de SeProgramar. </p>
-                        </div>
+
+                <div class="card2 efecto_card">
+                    <img src="img/imgProyect.png" class="card-img-top" alt="..." />
+                    <div class="card-body cardbody">
+                        <h5 class="card-title cardtitle">Portfolio personal</h5>
+                        <p class="card-text cardtxt">
+                            Con este proyecto aprobe el curso de #SeProgramar.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://jonatanmatwijow.github.io/portfolio-FrontEnd/" class="btn btn-primary"
+                            tabindex="-1" role="button" aria-disabled="true">Ver
+                            demostracion</a>
+
+                        <a href="https://github.com/JonatanMatwijow/portfolio-FrontEnd" class="btn btn-secondary"
+                            tabindex="-1" role="button" aria-disabled="true">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="card2 efecto_card">
+                    <img src="img/imgProyectoAgua.png" class="card-img-top" alt="Imagen de reciclado" />
+                    <div class="card-body cardbody">
+                        <h5 class="card-title cardtitle">Card title</h5>
+                        <p class="card-text cardtxt">
+                            Proyecto creado con el fin de presentar en el curso de HSA, de potreros Digital, tambien me
+                            sirvio para presentar como trabajo final en el curso de programacion web.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://jonatanmatwijow.github.io/El-agua-es-Vida/" target="_blank"
+                            class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Ver
+                            demostracion</a>
+                        <a href="https://github.com/JonatanMatwijow/El-agua-es-Vida" target="_blank"
+                            class="btn btn-secondary" tabindex="-1" role="button" aria-disabled="true">GitHub</a>
+
                     </div>
                 </div>
             </div>
+
         </section>
 
         <div class="divisiones">
@@ -556,16 +659,23 @@
 
         <!-- Sector de barras de progreso ver tema de animacion  -->
         <section class="dif-sections">
-            <!-- class="container-titulo-iconos" -->
-            <div class="title-section" id="habilidades">
-                <h2><u> Habilidades </u></h2>
+            <div class="container-titulo-iconos">
+                <div class="title-section" id="habilidades">
+                    <h2><u> Habilidades </u></h2>
+                </div>
+                <!-- botones de agregar y eliminar -->
+                <div class="botons-edit-trash">
+                    <i class="fa-solid fa-pencil" type="button"></i>
+                    <i class="fa-regular fa-trash-can" type="button"></i>
+                </div>
             </div>
+
             <!-- En este sector lo dividi en 3 columnas y en cada una de ellas un sector de skills -->
             <div class="container text-center">
                 <div class="row col-gap">
 
                     <!-- Skills de Front end -->
-                    <div class="col">
+                    <div class="col-md-4">
                         <h3>Front End </h3>
 
                         <div class="barras-progre-gap">
@@ -596,7 +706,7 @@
                     </div>
 
                     <!-- Skills de back end -->
-                    <div class="col">
+                    <div class="col-md-4">
                         <h3>Back End</h3>
                         <div class="barras-progre-gap">
                             <div class="sub-title-and-icon-progres-bar">
@@ -614,7 +724,7 @@
                     </div>
 
                     <!-- Otras Skills-->
-                    <div class="col">
+                    <div class="col-md-4">
                         <h3>Otros</h3>
 
                         <div class="barras-progre-gap">
@@ -622,7 +732,6 @@
                                 <img src="https://cdn-icons-png.flaticon.com/32/4494/4494748.png">
                                 <p> Git & GitHub </p>
                             </div>
-
                             <div class="progress">
                                 <div class="progress-bar" role="progressbar" aria-label="Example with label"
                                     style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">40%
@@ -641,13 +750,18 @@
 
         <!-- Seccion de contacto -->
         <section class="dif-sections">
-            <!-- class="container-titulo-iconos" -->
-            <div class="title-section" id="contacto">
-                <h2><u> Contacto </u></h2>
+            <div class="container-titulo-iconos">
+                <div class="title-section" id="contacto">
+                    <h2><u> Contacto </u></h2>
+                </div>
+                <!-- botones de agregar y eliminar -->
+                <div class="botons-edit-trash">
+                    <i class="fa-solid fa-pencil" type="button"></i>
+                    <i class="fa-regular fa-trash-can" type="button"></i>
+                </div>
             </div>
-
             <div class="form__">
-                <div class="box-form-left">
+                <div class="col-md-12 box-form-left ">
                     <p>
                         En el caso que necesite contactarme, ya sea para hacer alguna consulta o simplimente para dejar
                         tu comentario, porfavor sientace libre de hacerlo. En la brevedad sera respondido.
@@ -678,13 +792,12 @@
                     </ul>
                 </div>
 
-
                 <!-- En este div esta encerrado el form de contacto -->
-                <div class="box-form-right">
+                <div class="col-md-12 box-form-right ">
                     <form action="">
                         <div class="font__size">
                             <input type="text" placeholder="Nombre">
-                            <input type="text" placeholder="Apellido"> 
+                            <input type="text" placeholder="Apellido">
                             <input type="text" placeholder="Correo Electronico">
                             <input type="text" placeholder="Asunto">
                             <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
@@ -693,18 +806,17 @@
                         <input type="submit" value="Enviar mensaje" class="btn btn-outline-secondary">
                     </form>
                 </div>
+
             </div>
 
         </section>
 
-<!-- Boton de ir hacia arriba -->
-        <!-- <div id="btn_scroll" class="btn-volver">
-           
-           <a href="#inicio">
-            <i class="fa-regular fa-square-caret-up"></i>
-           </a>
-        </div> -->
-        
+        <!-- Boton de ir hacia arriba 
+        <div  id="btn_scroll" class="btn-volver">
+                <i class="fa-solid fa-house" type="button">
+                </i>
+        </div>-->
+
     </main>
 
     <!-- Footer, ver de agregarle info de contacto y demas.  -->
@@ -718,7 +830,8 @@
     <!-- JavaScript de bootstrap  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
-
+    <!--Activar Modal -->
+    <script src="script.js"></script>
 
 </body>
 

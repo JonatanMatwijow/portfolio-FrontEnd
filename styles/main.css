@@ -2,31 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:  'Itim', cursive;
+    font-family: 'Itim', cursive;
 }
-body{
+
+body {
     background-color: #f7f8ed;
 }
 
 
 /* Estas lineas son de las divisiones entre secciones */
-.divisiones{
+.divisiones {
     display: flex;
     justify-content: center;
 }
-.divisiones-entre-secciones{
+
+.divisiones-entre-secciones {
     width: 40%;
     border: 1px solid #4e7dbc;
-
 }
-
-/* Estas 2 lineas serian en el caso que desee agregar una imagen de back, y que las card no tengan color de fondo
-body{
-    background-image: url(../Img/cool-background.png) ;
-}*/
-
-
-
 
 /*Esta linea de modifica el tamaño del area del modal para que se aprecie completo el certificado*/
 .modal {
@@ -40,7 +33,6 @@ main .title-section {
 
 html {
     scroll-behavior: smooth;
-
 }
 
 body {
@@ -55,6 +47,7 @@ header {
 
 header a {
     color: #f7f8ed;
+    text-decoration: none;
 }
 
 header .navbar {
@@ -96,12 +89,13 @@ header .navbar-links ul {
     margin-bottom: 0px;
 }
 
- .fa-2xl{ 
-    font-size: 1.5rem !important; 
+.fa-2xl {
+    font-size: 1.5rem !important;
     line-height: .03125em;
     vertical-align: .1875em;
 }
- header .navbar-links ul .nav-bottom-login {
+
+header .navbar-links ul .nav-bottom-login {
     color: #f7f8ed;
     padding: 5px;
     display: flex;
@@ -131,35 +125,28 @@ header .navbar-links ul {
 }
 
 
-main p{
+main p {
     font-size: 1.25rem;
     line-height: 1.75rem;
 }
 
-main h2{
+main h2 {
     font-size: 2.25rem;
     line-height: 1.75rem;
 }
+
 main ul {
     list-style: none !important;
 }
 
-/* main section {
-    border: 1px solid black;
-    border-radius: 15px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-} */
-
 main .the-banner {
     width: 100%;
     height: 50vh;
-    /* border-radius: 15px 15px 0 0; */
 }
 
 main .container-img-perfil {
     position: absolute;
-    left: 150px;
+    left: 100px;
     transform: translate(-30%, -60%);
 }
 
@@ -168,25 +155,16 @@ main .img-perfil {
     height: 150px;
 }
 
-/* linea de boton editar banner */
-main .pencil-edit-banner {
-    position: absolute;
-    right: 25px;
-    top: 450px;
-}
-
-/* linea de boton editar imagen de perfil */
-main .pencil-edit-img {
-    position: absolute;
-    left: 174px;
-    top: 485px;
+main .botons-edit {
+    margin-left: 20px
 }
 
 main .tituloPrincipal {
     padding-top: 20px;
-    padding-left: 330px;
+    padding-left: 250px;
     padding-bottom: 20px;
     width: 100%;
+    display: flex;
 }
 
 main .botonesTitulo {
@@ -196,12 +174,11 @@ main .botonesTitulo {
     justify-content: flex-end;
     margin-bottom: 15px;
     padding-right: 15px;
-    font-size: 1.1rem;
 }
 
 
 main .txt_sobre_mi {
-    width: 60%;
+    width: 70%;
     margin: auto;
     text-align: center;
 }
@@ -217,9 +194,11 @@ main .logo-cap a img {
 
 }
 
-main .items_cards{
+main .items_cards {
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 15px;
 }
 
 
@@ -228,12 +207,12 @@ main .col-card {
     width: 200px;
 }
 
-main .col-md-8{
-text-align: justify;
+main .col-md-8 {
+    text-align: justify;
 }
 
-main .row{
-  justify-content: space-evenly;
+main .row {
+    justify-content: space-evenly;
 }
 
 /* cambios para que las imagenes de las cards se vean mas justos al texto */
@@ -251,12 +230,76 @@ main .row{
 }
 
 /* esta linea quita el color de fondo de las cards */
-.card{
+.card {
     --bs-card-bg: var(--bs-body-bg) none !important;
-    max-width: 70% !important;
-} 
+}
 
+/*Estas lineas son de las cards de proyectos*/
+.container-card2 {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
 
+.card2 {
+    width: 300px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.efecto_card {
+    border-radius: 6px;
+    overflow: hidden;
+    background:
+        /*#ffff*/
+        #f7f8ed;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.efecto_card:hover {
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5%)
+}
+
+.card2 img {
+    height: 150px;
+}
+
+.cardbody {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 15px;
+    padding: 20px;
+}
+
+.cardtitle {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cardtxt {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.card-footer {
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.estilos_ {
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 /* ---------------------------------------------------
 estas lineas son de los estilos para el titulo e iconos 
@@ -280,24 +323,32 @@ de las diferentes secciones, estan todos juntos.  */
 .botons-edit-trash {
     display: flex;
     justify-content: flex-end;
-    width: 50%;
     height: 25px;
-    margin-right: 15px;
-    gap: 10px;
+    gap: 30px;
+    align-items: center;
+    width: 50%;
+    margin: 20px 60px 30px 15px;
 }
+
 
 /* ----------------------------------------------*/
 
 /* ---------------------------------------------------
 estas lineas son los estilos de las barras de progreso.  */
+
 .progress {
     display: flex;
     height: 1.5rem;
-    overflow: hidden;
     font-size: 1rem;
-    background-color: #e9ecef;
+    overflow: hidden;
+    background: #e9ecef;
     border-radius: 1.25rem;
-    box-shadow: 8px 4px 12px 0.03px;
+    box-shadow: opx 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.progress:hover {
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5%)
 }
 
 .sub-title-and-icon-progres-bar {
@@ -326,13 +377,14 @@ estas lineas son los estilos de las barras de progreso.  */
 
 main .form__ {
     display: flex;
+    justify-content: center;
     width: 100%;
 }
 
 main .form__ .box-form-left {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 33%;
     padding-left: 6%;
     text-align: justify;
     padding-top: 2rem;
@@ -343,14 +395,14 @@ main .form__ .box-form-left {
 main .form__ .box-form-left ul {
     display: flex;
     justify-content: space-around;
-   
+
 }
 
 main .form__ .box-form-right {
     display: flex;
     flex-direction: column;
-    width: 60%;
-    padding-left: 8rem;
+    width: 33%;
+    padding-left: 5rem;
 }
 
 main .form__ .box-form-right form {
@@ -360,13 +412,13 @@ main .form__ .box-form-right form {
     border-radius: 20px;
 }
 
-main .form__ .box-form-right form div{
+main .form__ .box-form-right form div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-main .form__ .box-form-right form div input{
+main .form__ .box-form-right form div input {
     width: 100%;
     margin-top: 20px;
     padding: 10px;
@@ -375,7 +427,8 @@ main .form__ .box-form-right form div input{
     font-size: 1.2rem;
     outline: none;
 }
-main .form__ .box-form-right form div textarea{
+
+main .form__ .box-form-right form div textarea {
     height: 150px;
     width: 100%;
     margin-top: 20px;
@@ -387,7 +440,6 @@ main .form__ .box-form-right form div textarea{
 estas lineas son los estilos del footer.  */
 footer {
     width: 100%;
-    height: 100px;
     background: rgb(0, 0, 0);
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(50, 50, 50, 1) 90%);
 }
@@ -413,9 +465,9 @@ footer .box-footer {
 /* Estas lineas serian del boton para volver al inicio, reveer si va a estar o no. */
 /* .fa-regular.fa-square-caret-up:hover {
     color: #95f00c;
-}
+} */
 
-.btn-volver{
+/* .btn-volver{
     display: flex;
     align-items: center;
     font-size: 4rem;
@@ -427,3 +479,144 @@ footer .box-footer {
     transform: scale(0);
     transition: all 400ms ease;
 } */
+
+/* ----------------------------------------------
+A partir de aca van las medias querys
+----------------------------------------------*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 768px) {
+
+    header .navbar {
+        height: 55px;
+    }
+
+    header .navbar-links {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    header .navbar-links ul {
+        width: 50%;
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        justify-content: space-between;
+    }
+
+    header .navbar-links .container-logo-navbar {
+        padding-left: 0px;
+    }
+
+    main .the-banner {
+        max-width: auto;
+    }
+
+    main .img-perfil {
+        width: 100px;
+        height: 100px;
+    }
+
+    main .container-img-perfil {
+        position: absolute;
+        left: 40px;
+        transform: translate(-30%, -60%);
+    }
+
+    main .tituloPrincipal {
+        padding-top: 50px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+        width: 100%;
+        display: flex;
+    }
+
+    .fa-2xl {
+        font-size: 1rem !important;
+    }
+
+    .logo-navbar {
+        width: 200px;
+    }
+
+    main h2 {
+        font-size: 1.75rem;
+    }
+
+    .title-section {
+        padding-left: 0px;
+    }
+
+    .botons-edit-trash {
+        display: flex;
+        justify-content: flex-end;
+        height: 25px;
+        gap: 20px;
+        align-items: center;
+        width: 50%;
+        margin: 20px 30px 30px 15px;
+    }
+
+    main .txt_sobre_mi {
+        width: 80%;
+    }
+
+    main p {
+        font-size: 1rem;
+    }
+
+    .estilos_ {
+        max-width: 70%;
+    }
+
+    .img-thumbnail {
+        width: 130px;
+    }
+
+    main .form__ {
+        display: flex;
+        /* justify-content: center;
+        width: 100%; */
+        flex-direction: column;
+    }
+
+    main .form__ .box-form-left {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 6%;
+        padding-right: 6%;
+        text-align: justify;
+        padding-top: 2rem;
+        gap: 0rem;
+    }
+
+    main .form__ .box-form-left ul {
+        display: flex;
+        padding-right: 32px;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    main .form__ .box-form-right {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    main .form__ .box-form-right form div input {
+        font-size: 1rem;
+    }
+
+    main .form__ .box-form-right form div textarea {
+        font-size: 1rem;
+    }
+
+    .textCenter {
+        color: antiquewhite;
+        font-size: 0.75rem;
+    }
+}
