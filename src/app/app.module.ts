@@ -15,6 +15,7 @@ import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
 import { LoginComponent } from './components/login/login.component';
 import { PorfolioService } from './servicios/porfolio.service';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { PorfolioService } from './servicios/porfolio.service';
     ContactoComponent,
     SobreMiComponent,
     PerfilComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
