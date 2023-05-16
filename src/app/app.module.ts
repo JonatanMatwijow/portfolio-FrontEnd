@@ -14,8 +14,8 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
 import { LoginComponent } from './components/login/login.component';
-import { PorfolioService } from './servicios/porfolio.service';
 import { HomeComponent } from './components/home/home.component';
+import { PersonaService } from './service/persona.service';
 
 
 @NgModule({
@@ -31,14 +31,14 @@ import { HomeComponent } from './components/home/home.component';
     SobreMiComponent,
     PerfilComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [PorfolioService],
+  providers: [PersonaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
